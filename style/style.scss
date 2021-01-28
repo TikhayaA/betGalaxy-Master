@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Popins';
+    src: url('Circe-Regular.eot');
+    src: local('Popins'), local('Popins'), url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'), url('fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Regular.woff') format('woff'), url('fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-ExtraLight.eot');
+    src: local('Circe ExtraLight'), local('Circe-ExtraLight'), url('fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-ExtraLight.woff') format('woff'), url('fonts/Circe-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Thin.eot');
+    src: local('Circe Thin'), local('Circe-Thin'), url('fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Thin.woff') format('woff'), url('fonts/Circe-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Light.eot');
+    src: local('Circe Light'), local('Circe-Light'), url('fonts/Circe-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Light.woff') format('woff'), url('fonts/Circe-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Bold.eot');
+    src: local('Circe Bold'), local('Circe-Bold'), url('fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-Bold.woff') format('woff'), url('fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-ExtraBold.eot');
+    src: local('Circe ExtraBold'), local('Circe-ExtraBold'), url('fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('fonts/Circe-ExtraBold.woff') format('woff'), url('fonts/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+*{
+    font-family: 'Circe', sans-serif;
+}
+a{
+    font-family: 'Circe', sans-serif; 
+}
+body {
+    
+    margin: 0;
+    background: #090D15;
+}
+button{
+    font-family: 'Circe', sans-serif;
+}
+
+.main {
+    position: relative;
+}
+.main.open {
+    left: -200px;
+}
+
+.blackout {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.blackout-for-chat {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    display: none;
+    backdrop-filter: inherit;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 1330px;
+    margin: auto;
+    @media screen and (max-width: 1500px) and (min-width: 700px) {
+        width: 94%;
+    }
+    @media screen and (max-width: 699px){
+        width: 93%;
+    }
+    
+
+}
+.wrap-authorized {
+    padding-top: 60px;
+    @media screen and (max-width: 1500px) and (min-width: 1200px) {
+        padding-left: 100px;
+    }
+}
+.wrap-content {
+    margin: 43px auto;
+    padding-top: 40px;
+    @media screen and (max-width: 1200px) and (min-width: 320px) {
+        margin: auto;
+        padding-top: 30px;
+    }
+    @media screen and (max-width: 319px) and (min-width: 300px) {
+        padding-top: 0px;
+    }
+    
+    &.open {
+        margin-top: -20px;
+        margin-left: 220px;
+        transform: scale(0.88);
+    }
+    &.open-chat {
+        position: absolute;
+        left: calc(50% - 380px);
+        transform: translate(-440px, 0px);
+        z-index: 0;
+    }
+    &.open-menu {
+        position: absolute;
+        left: calc(50% + 120px);
+        transform: translate(-50%, 0px);
+        z-index: 0;
+
+        .chat_open-btn {
+            right: -120px;
+        }
+    }
+    &_main{
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+button{
+    border: none;
+}
+a:focus{
+    outline: none;
+ }
+ .hide-scrollbar {
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar { width: 0; }
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent !important;
+}
+@import"reset.css";
+@import"header.scss";
+@import"modal-signup.scss";
+@import"modal-login.scss";
+@import"modal-confirmation";
+@import"chat.scss";
+@import"banner.scss";
+@import"wrap-services.scss";
+@import"modal-forgot-p.scss";
+@import"modal-reset-p.scss";
+@import"header-authorized.scss";
+@import"sidebar.scss";
+@import"wrap-games.scss";
+@import"footer.scss";
+@import"btn-state";
+@import "input-state";
+@import"modal-popup";
+@import"wallet";
+@import"select";
+@import"leaderboard";
+@import"currency";
+@import"dice";
+@import"statistic";
+@import"autobets";
+@import"range";
+@import"modal-bet-info";
+@import"wheel";
+@import"wrap-casino-bet";
+@import"crash";
+@import"rules";
+@import"hilo";
+@import"news";
+@import"faq";
+@import"account";
+@import"user-profile";
+@import"account-slider-item";
+@import"slots";
+@import"sports";
+@import"slider";
+@import"tennis-bet";
+@import"casino";
+@import"rewards";
+@import"dividents";
+@import"timer";
+@import"article";
+@import"about-dividents.scss";
+@import"soccer-bet";
+@import"basketball-bet";
+@import"wrap-currency";
+@import"we-provide";

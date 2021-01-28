@@ -1,0 +1,70 @@
+.casino{
+    .statistic_body__row {
+        >:nth-child(1){
+            width: 12.7%;
+            padding-left: 30px;
+            @media screen and (max-width: 650px) and (min-width: 300px){
+                display: none;
+            }
+        }
+        >:nth-child(2){
+            width: 14%;
+            @media screen and (max-width: 768px) and (min-width: 450px){
+                width: 15%;
+            }
+            @media screen and (max-width: 650px) and (min-width: 300px){
+                padding-left: 30px;
+            }
+            @media screen and (max-width: 449px) and (min-width: 300px){
+                width: 25%;
+            }
+        }
+        >:nth-child(3){
+            width: 13%;
+            @media screen and (max-width: 768px) and (min-width: 300px){
+                display: none;
+            }
+        }
+        >:nth-child(4){
+            width: 15%;
+            @media screen and (max-width: 450px) and (min-width: 300px){
+                display: none;
+            }
+        }
+        >:nth-child(5){
+            width: 18%;
+            @media screen and (max-width: 768px) and (min-width: 300px){
+                display: none;
+            }
+        }
+        >:nth-child(6){
+            width: 13%;
+            @media screen and (max-width: 768px) and (min-width: 300px){
+                display: none;
+            }
+        }
+        >:nth-child(7){
+            width: 14%;
+            @media screen and (max-width: 700px) and (min-width: 450px){
+                width: 30%;
+            }
+            @media screen and (max-width: 449px) and (min-width: 300px){
+                width: 45%;
+            }
+        }
+    }
+    .slider_block{
+        >:nth-child(1){
+            background: linear-gradient(270deg, #00E0FF 0%, #002353 97.92%);
+            border-radius: 4px;
+        }
+        >:nth-child(2){
+            background: linear-gradient(270deg, #2610AB 0%, #002353 97.92%);
+            border-radius: 4px;
+        }
+        >:nth-child(3){
+            background: linear-gradient(270deg, #8A0A40 0%, #002353 97.92%);
+            border-radius: 4px;
+        }
+    }
+}

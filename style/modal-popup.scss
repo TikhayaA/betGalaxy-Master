@@ -1,0 +1,245 @@
+.modal-popup{
+    background: #191D2D;
+    border-radius: 4px;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 70px 50px;
+    margin: auto;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    @media screen and (max-width: 550px) and (min-width: 300px) {
+        width: 100%;
+        padding: 50px 16px;
+        top: 0%;
+        transform: translate(-50%, 0);
+    }
+    &_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 30px;
+    }
+    &_wrap-btn{
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    &_btn{
+        position: relative;
+        width: 47%;
+        border: none;
+        color: #FFFFFF;
+        box-sizing: border-box;
+       
+    }
+    &_btn-deposit{
+        &:after{
+            position: absolute;
+            left: 48px;
+            content: url("img/home-page-authorized/wallet-popup-vector.svg");
+            top:54%;
+            transform: translate(0, -50%);
+            @media screen and (max-width: 400px) and (min-width: 370px) {
+                left: 38px;
+            }
+            @media screen and (max-width: 369px) and (min-width: 300px) {
+                left: 26px;
+            }
+}
+        &.not-active{
+            &:after{
+                content: url("img/home-page-authorized/wallet-popup-vector-transgorm.svg");
+                }
+        }
+    }
+    &_btn-withdraw{
+        &:after{
+            position: absolute;
+            left: 43px;
+            content: url("img/home-page-authorized/wallet-popup-vector-transgorm.svg");
+            top: 52%;
+            transform: translate(0, -50%);
+            @media screen and (max-width: 400px) and (min-width: 370px) {
+                left: 33px;
+            }
+            @media screen and (max-width: 369px) and (min-width: 300px) {
+                left: 20px;
+            }
+}
+        &.active{
+            &:after{
+                content: url("img/home-page-authorized/wallet-popup-vector.svg");
+}
+        }
+    }
+    .label-wallet-deposit{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 6px;
+        color: #8190B0;
+        opacity: 0.7;
+        position: relative;
+        z-index: 2;
+      
+    }
+    &_button {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .wallet_body {
+        width: 100%;
+        top: 47px;
+        background: #212534;
+        border-radius: 4px;
+    }
+    .wallet_currency{
+        font-size: 14px;
+        color: #fff;
+    }
+    &_content{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(129, 144, 176, 0.8);
+            line-height: 18px;
+            padding: 20px 0;
+            span{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #FFFFFF;
+                padding-left: 6px;
+            }
+    }
+    &_label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(129, 144, 176, 0.7);
+        margin: 20px 0 6px 0;
+        z-index: 2;
+    }
+    &_label-wrap-btn{
+        position: absolute;
+        right: 9px;
+        top: 53px;
+    }
+    &_label-btn{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        color: #8190B0;
+        text-decoration: none;
+        background: rgba(129, 144, 176, 0.1);
+        border-radius: 2px;
+        padding:4px 6px 3px;
+        margin-left: 4px;
+         &:focus{
+            outline: none;
+         }
+         &:hover{
+            background: rgba(129, 144, 176, 0.3);
+         }
+    }
+    &_add{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        &:after{
+            position: absolute;
+            content: url("img/home-page-authorized/pop-add.svg");
+            top: 58%;
+            left: 0;
+            transform: translate(0, -50%,);
+            border-radius: 50px;
+        }
+    }
+    &.active {
+        display: block;
+    }
+    .wallet-qrcode {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        img {
+            margin-right: 24px;
+            height: 120px;
+            @media screen and (max-width: 600px) and (min-width: 300px) {
+                margin-right: 16px;
+            }
+        }
+        p {
+            padding: 0;
+            @media screen and (max-width: 3740px) and (min-width: 300px) {
+                font-size: 10px;
+            }
+        }
+    }
+    .select-option_title{
+        border: 1px solid rgba(129, 144, 176, 0.2);
+        &:hover{
+            border: 1px solid rgba(129, 144, 176, 0.5);
+        }
+    }
+    .select-option_body__block{
+        justify-content: flex-start;
+    }
+}
+.modal-withdraw{
+         max-height: 100vh;
+        overflow-y: auto;
+            &_wrap-input{
+                justify-content: space-between;
+                flex-wrap: wrap;
+                
+            }
+}
+.modal-transfer{
+    display: none;
+    .modal-popup_title{
+        margin: auto;
+        width: 55%;
+        @media screen and (max-width: 550px) and (min-width: 300px) {
+            width: 65%;
+        }
+    }
+}
+.modal-exchange{
+    display: none;
+    .modal-withdraw_wrap-input{
+        >div{
+            width: 48%;
+            @media screen and (max-width: 350px) and (min-width: 300px) {
+                width: 100%;
+            }
+        }
+        .select-option{
+            width: 100%;
+        }
+    }
+    .modal-popup_content{
+        font-size: 14px;
+    }
+}

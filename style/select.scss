@@ -1,0 +1,151 @@
+.select-option{
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+    &_title{
+        align-self: center;
+        border: 2px solid #212638;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 11px 60px 11px 16px;
+        position: relative;
+        height: 42px;
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+        &:after{
+            position: absolute;
+            content: url("img/home-page-authorized/wallet-vector.svg");
+            right: 23px;
+            top: 50%;
+            transform: translate(0, -50%);
+            transition: all 0.5s;
+        }
+    }
+    &_body{
+        position: absolute;
+        width: 100%;
+        border-radius: 4px;
+        top: 50px;
+        opacity: 0;
+        display: none;
+        background: #212534;
+        &__block{
+            height: 30px;
+            line-height: 30px;
+            justify-content: space-between;
+            padding: 0 10px 0 16px;
+        }
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    }
+    &[data-state="active"] {
+        .select-option_body {
+            opacity: 1;
+            display: flex;
+            z-index: 3;
+        }
+        .select-option_title:after {
+            transform: rotate(180deg) translate(0, 50%);
+            transition: all 0.5s;
+            }
+    }
+    &_transparent{
+        border: none;
+        padding: 0;
+        p{
+            color: #8190B0;
+            &:hover{
+                color: #fff;
+            }
+        } 
+    }
+    &_body-transparent{
+        background: #252A3E;
+        width: 120%;
+        left: -6%;
+    }
+}
+.selector-dropdown{
+    cursor: pointer;
+    &:hover{
+        background: #2F344A;
+    }
+}
+.reward {
+    width: 100%;
+}
+.reward-block {
+    width: 47%;
+    @media screen and (max-width: 374px) and (min-width: 320px) {
+        width: 49%;
+}
+}
+.checkbox-block {
+    &-item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0px 16px;
+    }
+    input {
+        margin-right: 10px;
+        opacity: 0;
+
+        &:checked{
+            + label {
+                &:before {
+                    background: #1058AB;
+                    border: 1px solid #1058AB;
+                }
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    label {
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -28px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #8190B0;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        &:after {
+            content: url(img/account/checked.svg);
+            position: absolute;
+            left: -25px;
+            opacity: 0;
+        }
+    }
+}
+.select-option-checkbox {
+    .select-option_title p {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

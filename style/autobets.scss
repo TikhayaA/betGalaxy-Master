@@ -1,0 +1,151 @@
+.autobets{
+    background: #121420;
+    border-radius: 0px 4px 4px 4px;
+    width: 100%;
+    padding: 4px 30px 24px;
+    box-sizing: border-box;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    @media screen and (max-width: 768px) and (min-width: 300px) {
+        padding: 24px 15px;
+    }
+    &.active {
+        display: flex;
+    }
+    .input-currency{
+        padding-left: 46px;
+        @media screen and (max-width: 320px) and (min-width: 300px) {
+            padding-left: 37px;
+        }
+    }
+    &_wrap-field{
+        justify-content: space-between;
+        width: 66%;
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 660px) and (min-width: 300px) {
+            flex-wrap: wrap;
+        }
+        .field{
+            margin-top: 30px;
+            width: 48%;
+            @media screen and (max-width: 1100px) and (min-width: 651px) {
+                width: 49%;
+            }
+            @media screen and (max-width: 660px) and (min-width: 300px) {
+                width: 100%;
+            }
+        }
+    }
+    .input-block-default{
+        width: 32%;
+        @media screen and (max-width: 950px) and (min-width: 650px) {
+            width: 49%;
+        }
+        @media screen and (max-width: 649px) {
+            width: 100%;
+        }
+    }
+    .autobets .autobets_stop-profit{
+        width: 75%;
+        @media screen and (max-width: 650px) and (min-width: 375px) {
+            width: 50%;
+         }
+         @media screen and (max-width: 374px) and (min-width: 300px) {
+            width: 100%;
+         }
+    }
+    .component-block-content{
+        margin-left: 10px;
+        justify-content: space-between;
+        .radio-buttons {
+            display: none;
+            &__label {
+                color: #8190B0;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 12px;
+                position: relative;
+                align-self: center;
+                margin-right: 21px;
+                cursor: pointer;
+                @media screen and (max-width: 320px) and (min-width: 300px) {
+                    font-size: 12px;
+                }
+            }
+            &__label:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                position: relative;
+                right: 10px;
+                text-align: center;
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: 1px solid #8190B0;
+                border-radius: 50px;
+                }
+            &__label:after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                position: absolute;
+                left: -7px;
+                top: 3px;
+                text-align: center;
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: 1px solid #FFFFFF;
+                border-radius: 50px;
+                background: #FFFFFF;
+                opacity: 0;
+}
+            &:checked + .radio-buttons__label:after { 
+                opacity: 1; 
+            }
+            &:checked + .radio-buttons__label:before{
+                border: 1px solid #FFFFFF;
+            }
+            &:checked + .radio-buttons__label{
+                color:  #FFFFFF;
+            }
+        }
+        .input-block-default_input-default{
+            width: 104px;
+            text-align: end;
+            padding-right: 15px;
+                @media screen and (max-width: 1400px) and (min-width: 300px) {
+                    width: 30.7%;
+                }
+        }
+    }
+    &_name{
+        color: rgba(129, 144, 176, 0.7);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 6px;
+    }
+    .label-infinity{
+        &.type {
+            &:after {
+                content: none;
+            }
+        }
+    }
+}
+.autobets .autobets_stop-profit{
+    @media screen and (max-width: 650px) and (min-width: 375px) {
+        width: 49%;
+     }
+     @media screen and (max-width: 374px) and (min-width: 300px) {
+        width: 100%;
+     }
+}

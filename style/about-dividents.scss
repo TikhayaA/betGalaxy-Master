@@ -1,0 +1,352 @@
+.about-dividents{
+    &_system {
+        align-items: center;
+        margin-bottom: 73px;
+        @media screen and (max-width: 1300px) and (min-width: 300px) {
+            flex-direction: column-reverse;
+         }
+    }
+    .banner-block{
+        background-image: url("img/about-divedents/bg-about-dividents.png");
+        @media screen and (max-width: 1500px) and (min-width: 300px) {
+            background-position: center;
+         }
+    }
+    .banner-block_bg{
+        bottom: 0;
+        top: auto;
+    }
+    .banner-block_content {
+        padding-bottom: 131px;
+        @media screen and (max-width: 1300px) and (min-width: 300px) {
+            padding-bottom: 50px;
+         }
+    }
+    .dividents-block{
+        padding: 60px 60px 20px;
+        @media screen and (max-width: 500px) and (min-width: 300px) {
+            padding: 30px 30px 10px;
+         }
+    }
+    .dividents-block_item{
+        margin-bottom: 44px;
+        @media screen and (max-width: 350px) and (min-width: 300px) {
+            margin-bottom: 24px;
+         }
+    }
+    .currency-twenty-size{
+        width: 40px;
+        height: 40px;
+    }
+    .dividents-item-wrap {
+        width: 57%;
+        @media screen and (max-width: 500px) and (min-width: 300px) {
+            width: 100%;
+         }
+    }
+    &_banner-title{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        >h1{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 42px;
+            margin-bottom: 20px;
+            @media screen and (max-width: 500px) and (min-width: 300px) {
+                font-size: 30px;
+                line-height: 125%;
+             }
+        }
+        >p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(255, 255, 255, 0.6);
+            width: 70%;
+            @media screen and (max-width: 500px) and (min-width: 300px) {
+               width: 90%;
+             }
+        }
+    }
+    &_wrap-content{
+        margin-top: 140px;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        z-index: 12;
+        @media screen and (max-width: 1400px) and (min-width: 300px) {
+            flex-direction: column;
+            margin-top: 50px;
+         }
+        .dividents_bg {
+            background: rgba(18, 20, 32, 0.5)!important;
+            border: 1px solid rgba(16, 88, 171, 0.5);
+        }
+    }
+    &_block-content{
+        width: 48%;
+        @media screen and (max-width: 1400px) and (min-width: 300px) {
+            width: 100%;
+         }
+        >img{
+            align-self: flex-start;
+        }
+    }
+    &_description-block-content{
+        >:nth-child(1){
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin:37px 0 20px;
+            @media screen and (max-width: 450px) and (min-width: 300px) {
+                margin:15px 0 10px;
+                font-size: 20px;
+                line-height: 125%;  
+             }
+        }
+        >span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 14px;
+            @media screen and (max-width: 450px) and (min-width: 300px) {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 10px;
+             }
+        }
+        
+    }
+    &_system{
+        >:nth-child(1){
+            width: 45%;
+            @media screen and (max-width: 1300px) and (min-width: 300px) {
+                width: 100%;
+             }
+        }
+    }
+    &_description-wrap{
+        background: #121420;
+        border-radius: 4px;
+        margin-bottom: 135px;
+        @media screen and (max-width: 1300px) and (min-width: 300px) {
+           flex-wrap: wrap;
+         }
+         @media screen and (max-width: 500px) and (min-width: 300px) {
+            margin-bottom: 80px;
+        }
+
+    }
+    &_description-item{
+        width: 26%;
+        padding: 25px 27px 34px 30px;
+        box-sizing: border-box;
+        position: relative;
+        @media screen and (max-width: 1300px) and (min-width: 600px) {
+            width: 47%;
+         }
+         @media screen and (max-width: 599px) and (min-width: 300px) {
+            width: 100%;
+            padding: 15px 25px;
+         }
+        >img{
+            margin-right: 20px;
+        }
+        >:after{
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 100px;
+            background:rgba(255, 255, 255, 0.05);
+            top: 50%;
+            right: 0px;
+            transform: translate(0, -50%);
+            @media screen and (max-width: 1300px) and (min-width: 300px) {
+                content: none;
+             }
+        }
+        &:last-child{
+            :after{
+                content: none;
+            }
+        }
+    }
+    &_description-item-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        img{
+            margin-left: -18px;
+        }
+    }
+    &_description-item-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .banner-utopia{
+        background-size: cover;
+        position: relative;
+        background-image: url("img/about-divedents/bg-ilustrator.png");
+        margin-bottom: 60px;
+        background-size: contain;
+        padding-bottom: 100px;
+        @media screen and (max-width:499px) and (min-width: 300px) {
+            margin-bottom: 0px;
+            padding-bottom: 160px;
+         }
+        &_utopia{
+            justify-content: space-around;
+            align-items: center;
+        }
+        &_content{
+            width: 44%;
+            align-self: center;
+            @media screen and (max-width: 1400px) and (min-width: 300px) {
+                align-items: flex-start;
+                width: 100%;
+             }
+        }
+        &_block-img{
+            width: 44%;
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: 1400px) and (min-width: 300px) {
+                justify-content: flex-start;
+             }
+             img{
+                @media screen and (max-width: 1400px) and (min-width: 500px) {
+                    width: 80%;
+                 }
+                 @media screen and (max-width:499px) and (min-width: 300px) {
+                    width: 100%;
+                 }
+             }
+        }
+        button{
+            width: 27%;
+            margin-top: 10px;
+        }
+    }
+    .utopia-need{
+        margin-bottom: 120px;
+        @media screen and (max-width: 500px) and (min-width: 300px) {
+            margin-bottom: 40px;
+         }
+        
+        &_wrap{
+            justify-content: space-between;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        &_item{
+            background: #121420;
+            width: 26.8%;
+            padding: 25px 27px 34px 30px;
+            @media screen and (max-width: 1200px) and (min-width: 769px) {
+                width: 23.8%;
+                margin-bottom: 20px;
+             }
+            @media screen and (max-width: 768px) and (min-width: 500px) {
+                width: 37%;
+                margin-bottom: 20px;
+             }
+             @media screen and (max-width: 499px) and (min-width: 300px) {
+                width: 100%;
+                margin-bottom: 20px;
+                padding:  10px 20px 20px;
+             }
+        }
+        h3{
+            margin: auto;
+        }
+    }
+    &_description-block-history{
+        >:nth-child(1){
+            width: 37%;
+            @media screen and (max-width: 1400px) and (min-width: 300px) {
+                width: 100%;
+             }
+        }
+        >:nth-child(2){
+            width: 51%;
+            @media screen and (max-width: 1400px) and (min-width: 300px) {
+                width: 100%;
+             }
+            img{
+                @media screen and (max-width: 1400px) and (min-width: 300px) {
+                    width: 100%;
+                 }
+            }
+        }
+    }
+   
+}
+.indicator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    @media screen and (max-width: 600px) and (min-width: 300px) {
+        display: none;
+     }
+    &_daily-charges{
+        position: relative;
+        .chart-number {
+            font-size: 0.6em;
+            font-weight: bold;
+            line-height: 1;
+            text-anchor: middle;
+            -moz-transform: translateY(0.3em);
+            -ms-transform: translateY(0.3em);
+            -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
+          }
+        
+     
+    }
+    &_daily-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -55%);
+}
+    &_daily-value{
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    &_daily-text{
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+     .donut-segment{
+        fill-opacity: 50%;
+     }
+
+}

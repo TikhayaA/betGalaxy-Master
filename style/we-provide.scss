@@ -1,0 +1,103 @@
+.we-provide{
+    margin-top: 170px;
+    margin-bottom: 150px;
+    &__container{
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    &__item{
+        background: #121420;
+        border-radius: 4px;
+        margin-bottom: 44px;
+       
+        span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+        button{
+            margin-top: 23px;
+            width: 150px;
+            box-sizing: border-box;
+        }
+        .title-icon{
+            margin-right: 20px;
+        }
+    }
+    &__games-content{
+        padding: 60px 40px;
+        width: 32%;
+        p{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 21px;
+        }
+        >:nth-child(1){
+            align-items: end;
+        }
+    }
+    &__games-img{
+        background: linear-gradient(270deg,  rgba(13, 119, 240, 0.3) 0%, rgba(13, 119, 240, 0) 76.58%);
+        width: 70%;
+        height: 100%;
+    }
+    &__games{
+        width: 100%;
+    }
+    &__games-wrap{
+        position: absolute;
+        width: 100%;
+        right: -28px;
+        bottom: 48px;
+    }
+    &__sports{
+        width: 49%;
+        span{
+            margin-right: -118px;
+        }
+    }
+    &__slots{
+    }
+    .wrap-games{
+        position: relative;
+        .wrap-games_block{
+            width: 23.5%;
+            padding-top: 162px;
+            height: auto;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            img{
+                position: absolute;
+                width: 100%;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            p{
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+    }
+    .wrap-sports{
+        background: linear-gradient(270deg, rgba(38, 211, 69, 0.3) 0%, rgba(38, 211, 69, 0) 100%);
+    }
+    .wrap-slots{
+        background: linear-gradient(270.13deg,  rgba(254, 93, 0, 0.3) 2.31%, rgba(254, 93, 0, 0) 99.9%);
+        .img-slots{
+            width: 87%;
+            margin-left: 92px;
+            margin-top: 21px;
+        }
+    }
+}

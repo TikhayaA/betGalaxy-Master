@@ -1,0 +1,103 @@
+.news{
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    &_wrap{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &_block{
+        border-radius: 4px;
+        width: 31.9%;
+        margin-bottom: 40px;
+        cursor: pointer;
+        @media screen and (max-width: 768px) and (min-width: 425px){
+            width: 46%;
+        }
+        @media screen and (max-width: 500px) and (min-width: 300px){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &:hover{
+            .news_block__content{
+                background: #191D2D;
+                transition: all 0.5s;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        &__content{
+            background: #121420;
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            @media screen and (max-width: 768px) and (min-width: 300px){
+                padding: 20px 16px 20px;
+            }
+            >div{
+                justify-content: space-between;
+            }
+            .date{
+                background: rgba(90, 101, 126, 0.1);
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 12px;
+                text-align: center;
+                color: #8190B0;
+                border-radius: 4px;
+                padding: 7px 14px;
+            }
+            >:nth-child(1){
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+            >:nth-child(2){
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(255,255,255, 0.5);
+                margin:10px 0 16px;
+            }
+            a{
+                text-decoration: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 12px;
+                color: #8190B0;
+                align-self: center;
+                display: flex;
+                 &:hover{
+                     color: #fff;
+                     transition: all 0.5s;
+                     svg{
+                        path{
+                            fill: #fff;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+                svg{
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.modal-login {
+    position: fixed;
+    z-index: 12;
+    top: 50%;
+    height: 586px;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 599px) and (min-width: 300px) {
+        top: 0%;
+        transform: translate(-50%, 0);
+    }
+    &.row{
+        display: none;
+    }
+    &_bg {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-image: url(img/home-page_modal/bg-login.svg);
+        @media screen and (max-width: 1024px) and (min-width: 300px) {
+            display: none;
+        }
+         :nth-child(1) {
+            padding-top: 72px;
+            align-self: center;
+        }
+         :nth-child(2) {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            align-self: flex-end;
+            width: 70%;
+            padding-bottom: 70px;
+            align-self: center;
+        }
+    }
+    .form-login {
+        margin-top: 32px;
+    }
+    &_wrap-icon {
+        margin-bottom: 67px;
+    }
+}
+
+.modal-login .form {
+    margin-top: 34px;
+    &_forgot {
+        text-transform: none;
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        color: #8190B0;
+        border-radius: 4px;
+        margin: 0;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

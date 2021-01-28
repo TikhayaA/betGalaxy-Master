@@ -1,0 +1,93 @@
+.wrap-game-info {
+    #range {
+        margin-top: 52px;
+    }
+    .noUi-horizontal {
+        height: 8px;
+        background: #1058AB;
+        border-radius: 46px;
+        border: none;
+        box-shadow: unset;
+    }
+    .noUi-touch-area {
+        background: #FFFFFF;
+        border-radius: 4px;
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #FE5D00;
+        text-align: center;
+        line-height: 36px;
+        &.blue-color {
+            color: #1058AB;
+        }
+    } 
+    .noUi-touch-area:active {
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.7);
+    }
+    .noUi-handle {
+        background: #FFFFFF;
+        border-radius: 4px;
+        width: 36px !important;
+        height: 36px !important;
+        top: -15px !important;
+        box-sizing: border-box;
+        &:after, &:before {
+            content: none;
+        }
+    }
+    .noUi-connect {
+        background: #FE5D00;
+        border-radius: 46px;
+    }
+}
+.user-profile_filter {
+    .noUi-handle {
+        background: #FFFFFF;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        border: unset;
+        right: -7px;
+        top: -4px;
+        &:before {
+            content: none;
+        }
+        &:after {
+            content: none;
+        }
+    } 
+    .noUi-connects {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .noUi-target {
+        background: rgba(255, 255, 255, 0.2);
+        height: 3px;
+        border-radius: 4px;
+        border: unset;
+        box-shadow: none;
+}
+    .noUi-connect {
+        background: #FE5D00;
+        border-radius: 46px;
+    }
+    .range-bloclk-filter {
+        padding: 20px 10px;
+        .range-filter-result {
+            margin-top: 15px;
+            display: flex;
+            justify-content:space-between;
+            span {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 12px;
+                color: #fff;
+                opacity: 0.5;
+            }
+        }
+    }
+}

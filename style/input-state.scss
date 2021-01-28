@@ -1,0 +1,239 @@
+.input-block{
+        margin-bottom: 14px;
+        position: relative; 
+        &_input-login-signup{
+            padding: 14px 14px 14px 45px;
+            width: 100%;
+            border: 1px solid rgba(129, 144, 176, 0.2);
+            border-radius: 4px;
+            box-sizing: border-box;
+            position: relative;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #191D2D;
+            font-family: 'Circe', sans-serif;
+            outline: none;
+            &::placeholder {
+                color: #8190B0;
+            }
+            &:focus+label:before {
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 50px;
+                top: -13px;
+                right: 296px;
+                background: #1058AB;
+                border-radius: 4px 0px 0px 4px;
+                display: block;
+            }
+            &:focus {
+                background: rgba(255, 255, 255, 0.04);
+                color: #FFFFFF;
+            }
+            &:hover{
+                border: 1px solid rgba(129, 144, 176, 0.4);
+                border-radius: 4px;
+            }
+        }
+         
+    }
+.input-block-default{
+    position: relative; 
+    &_input-default{
+        padding: 11px 32px 11px 16px;
+        width: 100%;
+        border: 1px solid rgba(129, 144, 176, 0.2);
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #FFFFFF;
+        background: none;
+        font-family: 'Circe', sans-serif;
+        outline: none;
+        @media screen and (max-width: 320px) and (min-width: 300px) {
+            padding: 10px 32px 10px 10px;
+            }
+        &::placeholder {
+            color: #8190B0;
+        }
+        &:focus {
+            background: rgba(255, 255, 255, 0.04);
+            color: #FFFFFF;
+            border: 1px solid #8190B0;
+        }
+        &:hover{
+            border: 1px solid rgba(129, 144, 176, 0.4);
+            border-radius: 4px;
+        }
+        &:disabled{
+            background: #191D2D;
+            border: 1px solid transparent;
+            color: #8190B0;
+        }
+    } 
+    .input-btn{
+    padding-right: 46px;
+    }
+}
+.label-user {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: url(img/home-page_modal/user.svg);
+        top: 4px;
+        right: 265px;
+    }
+}
+.label-email {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: url(img/home-page_modal/mail.svg);
+        top: 4px;
+        right: 265px;
+    }
+}
+.label-password {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: url(img/home-page_modal/password.svg);
+        top: 4px;
+        right: 265px;
+    }
+}
+.display_password {
+    position: absolute;
+    right: 21px;
+    top: 15px;
+    display: none;
+    cursor: pointer;
+}
+.input-error {
+    border: 1px solid #FE5D00;
+    border-radius: 4px;
+    position: relative;
+}
+.tooltip-input {
+        width: fit-content;
+        bottom: -37px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: none;
+        background: #FFFFFF;
+        border-radius: 2px;
+        padding: 9px 10px;
+        position: absolute;
+        z-index: 3;
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            color: #121420;
+        }
+        &.active{
+            display: flex;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 7px solid #fff;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: -7px;
+        }
+}
+.tooltip-password {
+    width: 177px;
+    box-sizing: border-box;
+    padding: 9px 10px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 3;
+    top: 57px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    flex-direction: column;
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #121420;
+    }
+    &.active{
+        display: flex;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #fff;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -7px;
+    }
+    &_string {
+        padding-bottom: 8px;
+        justify-content: flex-start;
+        img {
+            padding-right: 8px;
+        }
+        p {
+            text-align: left;
+            align-self: center;
+        }
+    }
+}
+.label-infinity {
+    &:after{
+        position: absolute;
+        content: url("img/dice/infinity.svg");
+        top: 52px;
+        cursor: pointer;
+        right: 18px;
+    }
+}
+.label-copy{
+    svg{
+        z-index: 5;
+        position: absolute;
+        top: 33px;
+        right: 13px;
+        cursor: pointer;
+    }
+    &:hover{
+        svg{
+            path{
+                fill: #4D94E6;
+            }
+        }
+    }
+}
+.label-double{
+    a{
+        z-index: 5;
+        position: absolute;
+        top: 54px;
+        right: 14px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        text-decoration: none;
+        color: #fff;
+    }
+ }

@@ -1,0 +1,161 @@
+.rules{
+    // overflow: hidden;
+    max-height: 100vh;
+    overflow-y: auto;
+    &_slider-wrap-banner{
+        margin-top: 20px;
+        img{
+            @media screen and (max-width: 425px) and (min-width: 300px) {
+                width: 98%;
+            }
+        }
+        &-block {
+            position: relative;
+            overflow: hidden;
+            div:first-child {
+                position: relative;
+                left: -100%;
+                transition: all 1s;
+                width: 100%;
+                opacity: 0;
+                &.active {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+            div:last-child {
+                position: absolute;
+                left: 100%;
+                top: 0px;
+                transition: all 1s;
+                opacity: 0;
+                &.active {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &_slider-wrap {
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 82%;
+            margin: auto;
+            margin-bottom: 24px;
+            @media screen and (max-width: 425px) and (min-width: 300px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .modal-popup_btn{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-right: 8px;
+            align-self: center;
+        }
+    }
+    .dots-wrap{
+        justify-content: center;
+        .dots{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin: 16px 12px 16px 0;
+            cursor: pointer;
+            border: none;
+            background: #FFFFFF;
+            opacity: 0.3;
+            &.active{
+                border: 1px solid #FFFFFF;
+                background: unset;
+                opacity: 1;
+            }
+        }
+    }
+    &_slider-wrap {
+        width: 100%;
+    }
+    &.active {
+        display: block;
+    }
+}
+.limits{
+    display: none;
+    &_title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #8190B0;
+        margin: 20px 0 10px;
+        justify-content: space-between;
+        padding-left: 30px;
+        @media screen and (max-width: 375px) and (min-width: 300px) {
+            padding-left: 25px;
+        } 
+        p{
+            width: 30%;
+        }
+    }
+    &_body{
+        background: #121420;
+        border-radius: 4px;
+        padding: 3px 41px 21px 30px;
+        @media screen and (max-width: 375px) and (min-width: 300px) {
+            padding: 3px 25px 21px 25px;
+        }
+        &__row{
+            justify-content: space-between;
+            margin-top: 17px;
+            >div{
+                align-self: center;
+                width: 27%;
+                @media screen and (max-width: 375px) and (min-width: 300px) {
+                    width: 31%;
+                } 
+            }
+            .limits-currency{
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                @media screen and (max-width: 375px) and (min-width: 300px) {
+                    width: 16px;
+                    height: 16px;
+                } 
+            }
+            span{
+                font-size: 14px;
+                margin-left: 3px;
+                @media screen and (max-width: 375px) and (min-width: 300px) {
+                    font-size: 11px;
+                } 
+            }
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                width: 22%;
+                text-align: left;
+                @media screen and (max-width: 375px) and (min-width: 300px) {
+                    font-size: 11px;
+                } 
+            }
+        }
+    }
+}
+.hilo .rules_slider-wrap{
+    p{
+        height: 48px;
+    }
+}

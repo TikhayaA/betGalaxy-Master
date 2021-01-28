@@ -1,0 +1,161 @@
+.header-authorized{
+    justify-content: space-between;
+    padding: 7px 30px 8px;
+    width: 100%;
+    position: fixed;
+    background: #121420;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 6;
+    &_logo{
+        padding-left: 33px;
+        @media screen and (max-width: 550px) and (min-width: 300px) {
+            padding-left: 15px;
+        }
+        img{
+            padding-right: 13px;
+        }
+        a{
+            :nth-child(2){
+                @media screen and (max-width: 700px) and (min-width: 300px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &_menu{
+        width: 35%;
+        padding-right: 30px;
+        justify-content: flex-end;
+        @media screen and (max-width: 550px) and (min-width: 300px) {
+            padding-right: 0;
+            width: 80%;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 555px) and (min-width: 425px) {
+            margin-left: 15%;
+        }
+        @media screen and (max-width: 424px) and (min-width: 374px) {
+           margin-left: 5%;
+        }
+        :nth-child(3){
+            border: 1px solid transparent;
+            &:hover{
+                border: 1px solid #2F344A;
+                @media screen and (max-width: 424px) and (min-width: 300px) {
+                    border: 1px solid transparent;
+                 }
+            }
+        }
+       
+
+        &__btn{
+            background: #212638;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: center;
+            
+            @media screen and (max-width: 550px) and (min-width: 300px) {
+                background: none;
+                width: 5%;
+            }
+        }
+        .notification{
+            padding: 8px 11px;
+            margin: 0 13px 0 26px;
+            @media screen and (max-width: 550px) and (min-width: 300px) {
+                display: none;
+            }
+            &:hover{
+                g{
+                    opacity: 1;
+                }  
+            } 
+        }
+        .user-account{
+            padding: 6px 40px 6px 16px;
+            position: relative;
+            @media screen and (max-width: 550px) and (min-width: 376px) {
+               padding-left: 30px;
+            }
+            &_name{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                position: relative;
+                padding-left: 7px;
+                @media screen and (max-width: 550px) and (min-width: 300px) {
+                   display: none;
+                }
+                &:after{
+                    position: absolute;
+                    content: url(img/home-page-authorized/user-name-vector.svg);
+                    right: -22px;
+                    top:50%;
+                    transform: translate(0, -50%);
+                    -webkit-transform: translate(0, -50%);
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
+                }
+            }
+            &_dropdown{
+                position: absolute;
+                width: 100%;
+                border-radius: 4px;
+                top: 50px;
+                box-sizing: border-box;
+                left: 0;
+                background: #191D2D;
+                display: none;
+                @media screen and (max-width: 425px) and (min-width: 376px) {
+                    left: -11px;
+                  }
+                @media screen and (max-width: 375px) and (min-width: 300px) {
+                  left: -20px;
+                }
+                &__element{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    padding-left: 16px;
+                }
+            }
+            &.active{
+                .user-account_name:after{
+                    transform: rotate(180deg) translate(0, 50%);
+                    -webkit-transform: rotate(180deg) translate(0, 50%);
+                    -moz-transform: rotate(180deg) translate(0, 50%);
+                    -ms-transform: rotate(180deg) translate(0, 50%);
+                    -o-transform: rotate(180deg) translate(0, 50%);
+                }
+                .user-account_dropdown {
+                    display: block;
+                }
+            }
+        }
+       
+    }
+    .select-option_title{
+        &:hover{
+            border: 2px solid #2F344A;
+        }
+    }
+}
+
+   
+    

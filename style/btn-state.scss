@@ -1,0 +1,218 @@
+.button-style {
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 0 11px;
+}
+.button-first {
+    background: #1058AB;
+    &:hover {
+        background: #216DC6;
+    }
+    &:active {
+        background: #074893;
+    }
+    &:disabled {
+        background: #1058AB;
+        opacity: 0.5;
+    }
+}
+.button-second {
+    background: #FE5D00;
+    &:hover {
+        background: #FF6E1A;
+    }
+    &:active {
+        background: #D24D00;
+    }
+    &:disabled {
+        background: #FE5D00;
+        opacity: 0.4;
+    }
+}
+.button-third {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    &:hover {
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #090D15;
+    }
+    &:active {
+        background: #ECECEC;
+        border: 1px solid #FFFFFF;
+        color: #090D15;
+    }
+    &:disabled {
+        background: transparent;
+        opacity: 0.4;
+        border: 1px solid #FFFFFF;
+        color:rgba(255, 255, 255, 0.7);
+    }
+}
+.button-fourth{
+    background: #33394B;
+    &:hover {
+        background:  #454E62;
+    }
+    &:active {
+        background: rgba(129, 144, 176, 0.4);
+    }
+    &:disabled {
+        background: #282D3D;
+        color: rgba(255, 255, 255, 0.3);
+        svg{
+            opacity: 0.3;
+        }
+    }
+}
+.button-fifth{
+    background: #23283A;
+    color: #8190B0;
+    &:hover {
+        background: #2D344A;
+    }
+    &:active {
+        background: #252A3D;
+    }
+}
+.button-wheel-gray{
+    background: #8190B0;
+    &:hover {
+        background: #95A2BE;
+    }
+    &.active {
+        background: none;
+        border: 1px solid #8190B0;
+    }
+    svg{
+        &:disabled {
+            opacity: 0.3;
+        }
+    }
+    &:disabled {
+        background: #8190B0;
+        opacity: 0.4;
+        svg{
+            opacity: 0.3;
+        }
+    }
+}
+.button-wheel-pink{
+    background: #FF1C45;
+    &:hover {
+        background: #FF274E;
+    }
+    &.active {
+        background: none;
+        border: 1px solid #FF1C45;
+    }
+    &:disabled {
+        background: #FF1C45;
+        opacity: 0.4;
+    }
+}
+.button-wheel-blue{
+    background: #0D77F0;
+    &:hover {
+        background: #2386F8;
+    }
+    &.active {
+        background: none;
+        border: 1px solid #0D77F0;
+    }
+    &:disabled {
+        background: #0D77F0;
+        opacity: 0.4;
+    }
+}
+.button-wheel-yellow{
+    background: #F6AF25;
+    &:hover {
+        background: #FDB72E;
+    }
+    &.active {
+        background: none;
+        border: 1px solid #EEA924;
+    }
+    &:disabled {
+        background: #EEA924;
+        opacity: 0.4;
+    }
+}
+.closse-modal{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    right: 31px;
+    top: 32px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: absolute;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    img {
+        display: inline-block;
+    }
+}
+.closse-modal-filter{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    right: 31px;
+    top: 32px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: absolute;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    img {
+        display: inline-block;
+    }
+}
+.button-sports {
+    background:rgba(129, 144, 176, 0.2);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    &:hover {
+        background: #1058AB;
+    }
+    &:active {
+        border: 1px solid #1058AB;
+        background: transparent;
+    }
+    &:disabled {
+        background: #121420;
+        >:nth-child(1){
+            color: #8190B0;
+        }
+        :nth-child(2){
+            color: rgba(129, 144, 176, 0.5);
+        } 
+    }
+}
+// .button-sports-disabled {
+//     background: #121420;
+//     border-radius: 4px;
+    
+// }

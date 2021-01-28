@@ -1,0 +1,321 @@
+.wrap-game-info{
+    width: 990px;
+    @media screen and (max-width: 1500px) and (min-width: 1441px) {
+        width:73%;
+    }
+    @media screen and (max-width: 1440px) and (min-width: 300px) {
+        width: 100%;
+    }
+}
+.wrap-control{
+    justify-content: space-between;
+    margin: 40px 0 20px;
+    @media screen and (max-width: 1100px) and (min-width: 300px) {
+        flex-direction: column-reverse;
+    }
+    &_left{
+        box-sizing: border-box;
+        width: 35.8%;
+        @media screen and (max-width: 1100px) and (min-width: 300px) {
+           width: 100%;
+           margin-top: 20px;
+        }
+        &__title{
+            justify-content: space-between;
+            a{
+                padding: 10px 0;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+                text-transform: capitalize;
+                color: #8190B0;
+                opacity: 0.7;
+                text-decoration: none;
+                position: relative;
+                text-align: end;
+                justify-content: flex-end;
+                display: flex;
+                margin-left: auto;
+                &:hover{
+                    color: #fff;
+                    opacity: 1;
+                    svg{
+                        :first-child{
+                            fill: #fff;
+                            }
+                    }
+                } 
+                svg{
+                    margin-right: 7px;
+                }
+            }
+        }
+        &__title-text{
+            padding: 10px 0;
+            width: 107px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: rgba(129,144,176, 0.7);
+            background: none;
+            &.active{
+                color: #fff;
+                background: #121420;
+                border-radius: 4px 4px 0px 0px;
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+        &__body{
+            background: #121420;
+            border-radius: 0px 4px 4px 4px;
+        }
+        &__body-content{
+            background: #121420;
+            border-radius: 0px 4px 4px 4px;
+            padding: 4px 30px 20px;
+            box-sizing: border-box;
+            color: #fff;
+            display: none;
+            justify-content: space-between;
+            @media screen and (max-width: 375px) and (min-width: 300px) {
+                padding: 4px 15px 20px;
+             }
+            &.active{
+                display: flex;
+            }
+            .input-block-default{
+                @media screen and (max-width: 1100px) and (min-width: 376px) {
+                    width: 311px;
+                 }
+                 @media screen and (max-width: 375px) and (min-width: 300px) {
+                    width: 100%;
+                 }
+            }
+            .modal-popup_button{
+                @media screen and (max-width: 1100px) and (min-width: 376px) {
+                    width: 311px;
+                 }
+                 @media screen and (max-width: 375px) and (min-width: 300px) {
+                    width: 100%;
+                 }
+            }
+            .input-currency{
+                padding-left: 46px;
+                &_btn{
+                    padding-right: 146px;
+                }
+                @media screen and (max-width: 320px) and (min-width: 300px){
+                     padding-left: 40px;
+                }
+            }
+        }
+        &__currency{
+            position: absolute;
+            top: 51px;
+            left: 13px;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+        }
+    }
+    &_right{
+        box-sizing: border-box;
+        background: #121420;
+        border-radius: 4px; 
+        padding: 40px 30px;
+        box-sizing: border-box;
+        @media screen and (max-width: 1500px) and (min-width: 1200px) {
+            width: 62%;
+        }
+        @media screen and (max-width: 600px) and (min-width: 300px) {
+            background: none;
+        }
+        @media screen and (max-width: 550px) and (min-width: 300px) {
+            padding: 40px 0px;
+        }
+        &__wrap-btn{
+            justify-content: space-between;
+            @media screen and (max-width: 600px) and (min-width: 300px) {
+                flex-wrap: wrap-reverse;
+            }
+            .conrol-btn-roll{
+                background: #121420;
+                border-radius: 4px;
+                border: 1px solid rgba(129, 144, 176, 0.2);
+                padding: 7px;
+                
+                >div{
+                    border-radius: 4px;
+                    width: 116px;
+                    box-sizing: border-box;
+                    text-align: right;
+                    padding: 9px 16px 6px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    position: relative;
+                }
+                &:hover {
+                    border: 1px solid rgba(129, 144, 176, 0.5);
+                    >div{
+                        background: rgba(129, 144, 176, 0.5);
+                    }
+                    
+                }
+                &.active-under{
+                    border: 1px solid #1058AB;
+                    &:hover {
+                        border: 1px solid #216DC6;
+                        >div{
+                            background: #216DC6;
+                            }
+                        }
+                    >div{
+                        background: #1058AB;
+                    }
+                }
+                &.active-over{
+                    border: 1px solid #FE5D00;
+                    &:hover{
+                        border: 1px solid #FF6E1A;
+                        >div{
+                            background: #FF6E1A;
+                        }
+                    }
+                    >div{
+                        background: #FE5D00;
+                    }
+                }
+
+            }
+            .conrol-btn-roll-under{
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: 23px;
+                    top: 15px;
+                    content: url("img/home-page-authorized/wallet-popup-vector-transgorm.svg");
+                    }
+            }
+            .conrol-btn-roll-over{
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: 32px;
+                    top: 15px;
+                    content: url("img/home-page-authorized/wallet-popup-vector.svg");
+                    }
+            }
+        }
+        &__prediction-wrap{
+            background: #191D2D;
+            border-radius: 4px;
+            padding: 9px 0;
+            position: relative;
+            width: 254px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            margin: 0 16px;
+            height: 50px;
+            @media screen and (max-width: 1500px) and (min-width: 601px) {
+                width: 46%;
+            }
+            @media screen and (max-width: 600px) and (min-width: 300px) {
+                order: 3;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: 499px) and (min-width: 300px) {
+                width: 100%;
+            }
+            
+            &:after{
+                position: absolute;
+                content: "";
+                height: 24px;
+                width: 1px;
+                background: rgba(129, 144, 176, 0.3);
+                border-radius: 21px;
+                right: 50%;
+                top: 50%;
+                transform: translate(0, -50%);
+                }
+
+        }
+        &__prediction, &__chance{
+            justify-content: space-between;
+            width: 50%;
+            :nth-child(1){
+                color: rgba(129, 144, 176, 0.3);
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 12px;
+                text-align: center;
+            }
+            :nth-child(2){
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .modal-popup_label-wrap-btn{
+        top:48px
+    }
+    .modal-popup_label-btn{
+        padding: 7px 6px 5px;
+    }
+}
+.dice{
+    .statistic_body__row{
+            >:nth-child(1){
+                width: 15%;
+                padding-left: 30px;
+                @media screen and (max-width: 750px) and (min-width: 300px) {
+                    display: none;
+                }
+            }
+            >:nth-child(2){
+                width: 19%;
+                display: none;
+            }
+            :nth-child(3){
+                width: 24%;
+                @media screen and (max-width: 750px) and (min-width: 300px) {
+                    padding-left: 30px;
+                }
+            }
+            :nth-child(4){
+                width: 26%;
+                @media screen and (max-width: 650px) and (min-width: 300px) {
+                    display: none;
+                }
+            }
+            :nth-child(5){
+                width: 20%;
+                @media screen and (max-width: 500px) and (min-width: 300px) {
+                    display: none;
+                }
+            }
+            :nth-child(6){
+                width: 21%;
+                @media screen and (max-width: 500px) and (min-width: 300px) {
+                    width: 46%;
+                }
+            }
+    }
+}

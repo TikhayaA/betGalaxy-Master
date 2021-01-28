@@ -1,0 +1,270 @@
+.hilo{
+    .wrap-control_left {
+        width: 100%;
+    }
+    .wrap-control_left__body-content{
+        @media screen and (max-width: 1000px) and (min-width: 300px) {
+            flex-direction: column;
+        }
+        button{
+            align-self: flex-end;
+            @media screen and  (min-width: 1000px) {
+                width: 20.3%;
+            }
+            
+            @media screen and (max-width: 1000px) and (min-width: 300px) {
+                align-self: flex-start;
+            }
+            svg{
+                margin-right: 7px;
+            }
+        }
+        >:nth-child(2), >:nth-child(3){
+            @media screen and (max-width: 1000px) and (min-width: 300px) {
+                display: none;
+            }
+        }
+        .btn-cashout{
+            display: none;
+        }
+    }
+    .wrap-cards{
+        margin-top: 30px;
+        background: #121420;
+        border-radius: 4px;
+        padding: 0px 30px 26px;
+        overflow: hidden;
+        &_block{
+            &__card{
+                width: 79px;
+                height: 110px;
+                background: #FFFFFF;
+                border-radius: 6px;
+                padding: 10px;
+                box-sizing: border-box;
+                margin: 20px 20px 10px 0;
+                position: relative;
+                @media screen and (max-width: 425px) and (min-width: 300px) {
+                    width: 50px;
+                    height: 70px;
+                    padding: 6px;
+                    margin: 20px 14px 6px 0;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 27px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                }
+                .diamonds{
+                    color: #FF1C45; 
+                    &:after{
+                        position: absolute;
+                        content: url("img/hilo/diamonds.svg");
+                        right: 30%;
+                        top: 111%;
+                        @media screen and (max-width: 425px) and (min-width: 300px){
+                            transform: scale(0.8);
+                            right: 18%;
+                            top: 66%;
+                        }
+
+                    }
+                }
+                .hearts{
+                    color: #FF1C45; 
+                    &:after{
+                        position: absolute;
+                        content: url("img/hilo/hearts.svg");
+                        right: 30%;
+                        top: 111%;
+                        @media screen and (max-width: 425px) and (min-width: 300px){
+                            transform: scale(0.8);
+                            right: 18%;
+                            top: 66%;
+                        }
+                    }
+                }
+                .spades{
+                    color: #121420;
+                    &:after{
+                        position: absolute;
+                        content: url("img/hilo/spades.svg");
+                        right: 30%;
+                        top: 111%;
+                        @media screen and (max-width: 425px) and (min-width: 300px){
+                            transform: scale(0.8);
+                            right: 18%;
+                            top: 66%;
+                        }
+                    }
+                }
+                .clubs{
+                    color: #121420;
+                    &:after{
+                        position: absolute;
+                        content: url("img/hilo/clubs.svg");
+                        right: 30%;
+                        top: 111%;
+                        @media screen and (max-width: 425px) and (min-width: 300px){
+                            right: 18%;
+                            top: 66%;
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+            &__btn{
+                border-radius: 4px;
+                width: 79px;
+                padding: 6px 0 5px;
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 11px;
+                line-height: 11px;
+                text-align: center;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    width: 50px;
+                    font-size: 8px;
+                    padding: 2px 0 2px;
+                }
+            }
+            .start-card{
+                background: #282E3F;
+            }
+            .loose-card{
+                background: #FF1C45;
+            }
+            .win-card{
+                background: #1ED33D;
+            }
+
+        }
+        &_value{
+            background: #282E3F;
+            border-radius: 4px;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: 50%;
+            left: 69px;
+            z-index: 2;
+            transform: translate(0, -50%);
+            @media screen and (max-width: 425px) and (min-width: 300px){
+                width: 24px;
+                height: 24px;
+                left: 44px;
+            }
+        }
+        .value-next-card{
+            &:after{
+                position: absolute;
+                content: url("img/hilo/Vector-more.svg");
+                transform: translate(0, -41%);
+                top: 50%;
+                left: 18px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: translate(0, -41%) scale(0.9);  
+                    left: 12px;     
+                    }
+                }           
+            &::before{
+                position: absolute;
+                content: url("img/hilo/Vector-more.svg");
+                transform: translate(0, -41%);
+                top: 50%;
+                left: 11px;
+                 @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: translate(0, -41%) scale(0.9);
+                    left: 6px;
+                    }
+                }
+        }
+        .value-win-card{
+            &:after{
+                position: absolute;
+                content: url("img/hilo/more-top.svg");
+                top: 14px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: scale(0.9);
+                    top: 7px;
+                    left: 3px;
+                }
+                }
+            &::before{
+                position: absolute;
+                content: url("img/hilo/line.svg");
+                top: 2px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: scale(0.9);
+                    top: -3px;
+                    left: 3px;
+                }
+              }
+        }
+        .value-loose-card{
+            &:after{
+                position: absolute;
+                content: url("img/hilo/more-top.svg");
+                transform: rotate(180deg);
+                top: 7px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: rotate(180deg) scale(0.9);   
+                    top: 1px;
+                    left: 3px;
+                      }
+                  }
+            &::before{
+                position: absolute;
+                content: url("img/hilo/line.svg");
+                top: 13px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: scale(0.9);
+                    top: 6px;
+                    left: 3px;
+                }
+              }
+        }
+        .value-equally-card{
+            &:after{
+                position: absolute;
+                content: url("img/hilo/line.svg");
+                top: 4px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: scale(0.9);
+                    top: -1px;
+                    left: 3px;
+                    }
+                  }
+            &::before{
+                position: absolute;
+                content: url("img/hilo/line.svg");
+                top: 11px;
+                left: 9px;
+                @media screen and (max-width: 425px) and (min-width: 300px){
+                    transform: scale(0.9);
+                    top: 5px;
+                    left: 3px;
+                }
+              }
+        }
+    }   
+    .modal-bet-info-hilo{
+        .wrap-cards {
+            box-sizing: border-box;
+            margin-top: 30px;
+            background: #121420;
+            border-radius: 4px;
+            padding: 0px 30px 26px;
+        }
+    }
+}

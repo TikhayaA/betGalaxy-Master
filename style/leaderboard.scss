@@ -1,0 +1,100 @@
+.leaderboard{
+    background: linear-gradient(0deg, #121420, #121420);
+    border-radius: 4px;
+    width: 310px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1440px) and (min-width: 300px) {
+        display: none;
+    }
+    &_title{
+        align-items: flex-start;
+        position: relative;
+        padding: 24px;
+        border-bottom: 1px solid #252B3B;
+        p{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        
+        &__block-top{
+            background: #FE5D00;
+            border-radius: 82px;
+            padding:8px 13px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+        img{
+            position: absolute;
+            top: -56px;
+            right: -22px;
+        }
+    }
+    &_body{
+        padding: 0 12px 16px 12px;
+        &__title{
+            justify-content: space-between;
+            padding: 20px 40px 0 20px;
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #8190B0;
+            }
+        }
+        &__block{
+            background: #191D2D;
+            border-radius: 4px;
+            height: 54px;
+            line-height: 54px;
+            justify-content: space-between;
+            margin-top: 10px;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        &__rating-number{
+            font-weight: bold;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-align: center;
+            padding-right: 10px;
+        }
+        &__user-name{
+            font-style: normal;
+            font-weight: normal;
+            color: #FFFFFF;
+            line-height: 14px;
+            font-size: 14px;
+            width: 50%;
+        }
+        &__wrap-wager{
+            font-style: normal;
+            font-weight: normal;
+            color: #FFFFFF;
+            font-size: 14px;
+            .btc{
+                margin-bottom: 2px;
+            }
+        }
+        
+    }
+    &_footer{
+        padding-top: 5px;
+        border-top: 1px solid #252B3B;
+        &__block{
+            border: 1px solid #1058AB;
+        }
+    }
+   
+}

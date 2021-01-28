@@ -1,0 +1,35 @@
+.wallet{
+    &_currency{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #8190B0;
+        text-transform:uppercase ;
+    }
+    &_pop-up{
+        position: absolute;
+        background: #FE5D00;
+        box-shadow: 0px 0px 8px rgba(254, 93, 0, 0.6);
+        border-radius: 4px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: -14px;
+        &:hover {
+            background: #FF6E1A;
+        }
+        &:after{
+            position: absolute;
+            content: url("img/home-page-authorized/wallet-pop-ep-vector.svg");
+            top: 50%;
+            transform: translate(-50%, -44%);
+        }
+    }
+}

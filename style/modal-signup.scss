@@ -1,0 +1,179 @@
+.modal-signup {
+    background: #191D2D;
+    border-radius: 4px;
+    width: 1030px;
+    margin: auto;
+    position: fixed;
+    z-index: 12;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 1024px) and (min-width: 600px) {
+        width: 60%;
+    }
+    @media screen and (max-width: 599px) and (min-width: 300px) {
+        width: 100%;
+        top: 0%;
+        transform: translate(-50%, 0);
+    }
+    &.row{
+        display: none;
+    }
+    &_bg {
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        background-image: url(img/home-page_modal/bg-signUp.svg);
+        @media screen and (max-width: 1024px) and (min-width: 300px) {
+            display: none;
+        }
+        >img{
+            margin-top: 89px;
+            width: 413px;
+            align-self: center;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            align-self: center;
+            width: 70%;
+            margin-bottom: 58px;
+        }
+    }
+    &_block-form {
+        width: 530px;
+        padding-right: 20px;
+        @media screen and (max-width: 424px) and (min-width: 300px) {
+            padding-right: 0px;
+        }
+        &__title {
+            padding-top: 70px;
+            h2 {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 44px;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 0;
+            }
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: #8190B0;
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    &_wrap-icon {
+        justify-content: space-between;
+        margin-top: 19px;
+        margin-bottom: 70px;
+        &__block {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            width: 96px;
+            height: 50px;
+            line-height: 59px;
+            text-align: center;
+            @media screen and (max-width: 320px) and (min-width: 300px) {
+                width: 85px;
+            }
+            a {
+                padding: 0 26px;
+                display: inline-block;
+                img{
+                    vertical-align: baseline;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    width: 300px;
+    margin: auto;
+    margin-top: 37px;
+    @media screen and (max-width: 424px) and (min-width: 375px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 374px) and (min-width: 300px) {
+        width: 91%;
+    }
+    
+    &_check {
+        margin: 31px 0 5px;
+        line-height: 10px;
+        .checkbox-button {
+            display: none;
+            &__label {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                color: #8190B0;
+                vertical-align: middle;
+                position: relative;
+                padding-left: 13px;
+                @media screen and (max-width: 320px) and (min-width: 300px) {
+                    font-size: 11px;;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding-left: 32px;
+                }
+            }
+            &__label:before {
+                content: " ";
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+                position: relative;
+                right: 13px;
+                text-align: center;
+                vertical-align: middle;
+                box-sizing: border-box;
+                background: #1058AB;
+                border-radius: 2px;
+            }
+            &:checked+.checkbox-button__label:after {
+                content: url(img/home-page_modal/check.svg);
+                position: absolute;
+                padding: 5px 3px;
+                left: 0px;
+                top: -1px;
+            }
+        }
+    }
+    button {
+        padding: 15px 101px;
+        margin-top: 31px;
+        width: 100%;
+        @media screen and (max-width: 600px) and (min-width: 300px) {
+            display: none;
+        }
+    }
+    &_signup {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #8190B0;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: lowercase;
+    }
+   
+}

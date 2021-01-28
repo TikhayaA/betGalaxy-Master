@@ -1,0 +1,111 @@
+.header-not-authorized{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 11;
+    &.open{
+        left: 40%;
+    }
+}
+.header{
+    height: 100%;
+ &_logo{
+    width: 20%;
+    display: flex;
+    a{
+        display: flex;
+        img{
+            padding-right: 13px;
+        }
+        :nth-child(2){
+            @media screen and (max-width: 550px) and (min-width: 300px) {
+                display: none;
+            }
+        }
+    }
+    
+ }
+ nav{
+    width: 31%;
+    display: flex;
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+   ul{
+       justify-content: space-around;
+         align-self: center;
+        width: 100%;
+       li{
+        list-style-type: none;
+        margin-right: 46px;
+           img{
+               margin-right: 15px;
+           }
+           a{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color:rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: flex;
+           }
+       }
+   }
+ }
+ &_btn-wrap{
+     width: 23%;
+    align-items: center;
+    @media screen and (max-width: 1440px) and (min-width: 375px) {
+        width: auto;
+    }
+    @media screen and (max-width: 374px) and (min-width: 300px) {
+        width: 75%;
+    }
+ }
+ &_btn{
+    width: 127px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    align-items: center;
+    cursor: pointer;
+    &__login{
+        background: #1058AB;
+        box-shadow: 0px 0px 8px #1058AB;
+        margin-right: 16px;
+    }
+    &__signup{
+        background: #FE5D00;
+        box-shadow: 0px 0px 8px rgba(248, 138, 33, 0.7);
+        cursor: pointer;
+        z-index: 3;
+    }
+ }
+}
+.container-home-page{
+    width: 1170px;
+    margin:auto;
+    justify-content: space-between;
+    @media screen and (max-width: 1400px){
+        width: 80%;
+    }
+    @media screen and (max-width: 600px){
+        width: 93%;
+    }
+ }
+ .nav-colored {
+  background-color:#121420;
+}
+.nav-transparent { 
+    background-color:transparent;
+}
